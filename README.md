@@ -13,10 +13,9 @@ come to mind is create seperate thread for each task. But, what if there are tho
 Is there a limit for creating threads?
 
 In 32 bit Windows, there is 2GB addressable memory in virtual address space reserved for user usage and a default <br>
-stack size for a thread is 1MB. So, 2GB / 1MB,there is 
+stack size for a thread is 1MB. So, 2GB / 1MB, operation system will be allow to create 2000 threads. 
 
-In addition to limitaions of operation systtem, increasing of thread number redundantly will cause performance issues. <br>
-Because, scheduling and shifting of threads keep busy to processor.   
+In addition to limitaions of operation system, because of scheduling and shifting of threads increasing of thread number redundantly will cause performance issues.
 
 This problem can be solved by creating specific number thread and assign each task number / thread number 
 task to a thread, so, performance will be improved.
